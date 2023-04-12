@@ -22,7 +22,7 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Schematic.jpg" width="1000" height="700" />
 
 # Assembly
-### Easy assembly with interactive HTML file
+### Easy assembly with interactive iBom file
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Interactiv_HTML_Boom.jpg" width="1000" height="400" />
 
 ## Parts List
