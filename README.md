@@ -13,7 +13,7 @@ ESPClicker is a very simple ESP8266 IoT project that will allow you to integrate
 * 2x Low-Side Switch "ULM2003" ( Controll PINS: LS1-GPIO14,LS2-GPIO15 ) MAX LOAD 300mA
 * 1x ADC Pin "1V Max"
 * 1x ACS Pin "AC Power Detector" (Input Pin GPIO13)
-* Requires 5-12V 500ma power supply
+* Requires 5-12V 500mA power supply
 
 
 
