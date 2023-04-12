@@ -35,3 +35,7 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 7.
 8.
 
+## Additional links
+Home Assistant https://www.home-assistant.io/
+ESPhome https://esphome.io/
+
