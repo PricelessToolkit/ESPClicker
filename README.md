@@ -9,8 +9,8 @@ ESPClicker is a very simple ESP8266 IoT project that will allow you to integrate
 ## Technical Specifications
 
 * WiFi Module ESP8266 ESP-12F
-* 3x Built-in signal relays ( Controll PINS: R1-GPIO4,R2-GPIO5,R3-GPIO12 ) "R1 can be configured as normally open or normally closed" MAX LOAD 500mA 24V
-* 2x Low-Side Switch "ULM2003" ( Controll PINS: LS1-GPIO14,LS2-GPIO15 ) MAX LOAD 300mA
+* 3x Built-in signal relays ( Controll PINS: R1-GPIO4, R2-GPIO5, R3-GPIO12 ) "R1 can be configured as normally open or normally closed" MAX LOAD 500mA 24V
+* 2x Low-Side Switch "ULM2003" ( Controll PINS: LS1-GPIO14, LS2-GPIO15 ) MAX LOAD 300mA
 * 1x ADC Pin "1V Max"
 * 1x ACS Pin "AC Power Detector" (Input Pin GPIO13)
 * Requires 5-12V 500mA power supply
