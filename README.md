@@ -26,11 +26,13 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Interactiv_HTML_Boom.jpg" width="1000" height="400" />
 
 ## Additional parts list
+Cable for ESPClicker 12P https://s.click.aliexpress.com/e/_DEXNTZF
+
+Programmer and Test Clip Fixture
 1. Power Supply 5-12V 500-700mA https://s.click.aliexpress.com/e/_DFcN9hb
 2. ESP8266 Programmer https://s.click.aliexpress.com/e/_DF4HDaH
 3. PCB Test Clip Fixture  "6P Pogo Pin Minimum" https://s.click.aliexpress.com/e/_Dm3ox9R
-4. Pogo Pins https://s.click.aliexpress.com/e/_De0po3L
-5. Cable 12P https://s.click.aliexpress.com/e/_DEXNTZF
+4. Pogo Pins only https://s.click.aliexpress.com/e/_De0po3L
 
 
 ## Additional links
