@@ -1,0 +1,121 @@
+esphome:
+  name: espclicker
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  #domain: .lab.lan
+  ap:
+    ssid: "espclicker"
+    password: "espclicker_password"
+    ap_timeout: 10s
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "12345678"
+
+ota:
+  safe_mode: True
+  password: "12345678"
+
+sensor:
+
+- platform: adc
+  pin: A0
+  name: "espclicker ADC"
+  update_interval: 5s
+
+- platform: uptime
+  name: "espclicker Uptime"
+  id: uptime_seconds
+
+- platform: wifi_signal
+  name: "espclicker WiFi Signal"
+
+binary_sensor:
+
+  - platform: status
+    name: "espclicker Status"
+
+
+############# AC #############
+  - platform: gpio
+    pin:
+      number: 13
+      inverted: true
+      mode:
+        input: true
+    filters:
+      - delayed_off: 400ms
+    name: AC_Sens
+###############################
+
+
+switch:
+  - platform: restart
+    name: espclicker restart
+
+
+##########################################
+  - platform: gpio
+    pin: 4
+    id: Relay1
+    name: "Relay1"
+    icon: "mdi:switch"
+    restore_mode: ALWAYS_OFF
+##########################################
+  - platform: gpio
+    pin: 5
+    id: Relay2
+    name: "Relay2"
+    icon: "mdi:switch"
+    restore_mode: ALWAYS_OFF
+########################################
+  - platform: gpio
+    pin: 12
+    id: Relay3
+    name: "Relay3"
+    icon: "mdi:switch"
+    restore_mode: ALWAYS_OFF
+########################################
+  - platform: gpio
+    pin: 15
+    id: LS1
+    name: "LS1"
+    icon: "mdi:switch"
+    restore_mode: ALWAYS_OFF
+########################################
+  - platform: gpio
+    pin: 14
+    id: LS2
+    name: "LS2"
+    icon: "mdi:switch"
+    restore_mode: ALWAYS_OFF
+########################################
+  - platform: template
+    name: "Relay1_ON__200mss"
+    turn_on_action:
+    - switch.turn_on: Relay1
+    - delay: 200ms
+    - switch.turn_off: Relay1
+
+  - platform: template
+    name: "Relay2_ON_300ms"
+    turn_on_action:
+    - switch.turn_on: Relay2
+    - delay: 300ms
+    - switch.turn_off: Relay2
+
+  - platform: template
+    name: "Relay3_ON_200ms"
+    turn_on_action:
+    - switch.turn_on: Relay3
+    - delay: 200ms
+    - switch.turn_off: Relay3
