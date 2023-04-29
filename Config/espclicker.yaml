@@ -47,7 +47,7 @@ ota:
 # This should point to the public location of this yaml file.
 dashboard_import:
   package_import_url: github://PricelessToolkit/ESPClicker/Config/espclicker.yaml@main
-  import_full_config: false # or true
+  import_full_config: true # or true
 
 sensor:
 
