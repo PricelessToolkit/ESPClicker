@@ -1,51 +1,73 @@
+substitutions:
+  name: "espclicker"
+  friendly_name: "ESPClicker"
+
+
 esphome:
-  name: espclicker
+  name: "${name}"
+  friendly_name: "${friendly_name}"
+  # Automatically add the mac address to the name
+  # so you can use a single firmware for all devices
+  name_add_mac_suffix: true
+
   platform: ESP8266
   board: d1_mini
+  on_boot:
+    priority: -100
+    then:
+      - lambda: id(LS1).turn_off();
+      - lambda: id(LS2).turn_off();
 
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  #domain: .lab.lan
+  # This will allow for (future) project identification,
+  # configuration and updates.
+  project:
+    name: pricelesstoolkit.espclicker-template
+    version: "1.0"
+
   ap:
-    ssid: "espclicker"
-    password: "espclicker_password"
+    ssid: "${friendly_name} Fallback Hotspot"
+    password: "password"
     ap_timeout: 10s
 
+# In combination with the `ap` this allows the user
+# to provision wifi credentials to the device.
 captive_portal:
 
-# Enable logging
+
+
+# To be able to get logs from the device via serial and api.
 logger:
 
-# Enable Home Assistant API
+# API is a requirement of the dashboard import.
 api:
-  password: "12345678"
 
+# OTA is required for Over-the-Air updating
 ota:
-  safe_mode: True
-  password: "12345678"
+
+# This should point to the public location of this yaml file.
+dashboard_import:
+  package_import_url: github://PricelessToolkit/ESPClicker/Config/espclicker.yaml@main
+  import_full_config: false # or true
 
 sensor:
 
 - platform: adc
   pin: A0
-  name: "espclicker ADC"
+  name: "${name} ADC"
   update_interval: 5s
 
 - platform: uptime
-  name: "espclicker Uptime"
+  name: "${name} Uptime"
   id: uptime_seconds
 
 - platform: wifi_signal
-  name: "espclicker WiFi Signal"
+  name: "${name} WiFi Signal"
 
 binary_sensor:
 
   - platform: status
-    name: "espclicker Status"
+    name: "${name} Status"
 
-
-############# AC #############
   - platform: gpio
     pin:
       number: 13
@@ -54,68 +76,45 @@ binary_sensor:
         input: true
     filters:
       - delayed_off: 400ms
-    name: AC_Sens
-###############################
-
+    name: "${name} AC_Sens"
 
 switch:
   - platform: restart
-    name: espclicker restart
+    name: "${name} restart"
 
 
 ##########################################
   - platform: gpio
     pin: 4
     id: Relay1
-    name: "Relay1"
+    name: "${name} Relay1"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
 ##########################################
   - platform: gpio
     pin: 5
     id: Relay2
-    name: "Relay2"
+    name: "${name} Relay2"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
 ########################################
   - platform: gpio
     pin: 12
     id: Relay3
-    name: "Relay3"
+    name: "${name} Relay3"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
 ########################################
   - platform: gpio
-    pin: 15
     id: LS1
-    name: "LS1"
+    name: "${name} LS1"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
+    pin: 15
 ########################################
   - platform: gpio
-    pin: 14
     id: LS2
-    name: "LS2"
+    name: "${name} LS2"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
-########################################
-  - platform: template
-    name: "Relay1_ON__200mss"
-    turn_on_action:
-    - switch.turn_on: Relay1
-    - delay: 200ms
-    - switch.turn_off: Relay1
-
-  - platform: template
-    name: "Relay2_ON_300ms"
-    turn_on_action:
-    - switch.turn_on: Relay2
-    - delay: 300ms
-    - switch.turn_off: Relay2
-
-  - platform: template
-    name: "Relay3_ON_200ms"
-    turn_on_action:
-    - switch.turn_on: Relay3
-    - delay: 200ms
-    - switch.turn_off: Relay3
+    pin: 14
