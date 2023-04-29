@@ -61,9 +61,9 @@ api:
 ota:
 
 ############################### DELET THIS PART AFTER ################################
-dashboard_import:
-  package_import_url: github://PricelessToolkit/ESPClicker/Config/espclicker.yaml@main
-  import_full_config: true # or true
+#dashboard_import:
+#  package_import_url: github://PricelessToolkit/ESPClicker/Config/espclicker.yaml@main
+#  import_full_config: true # or true
 ######################################################################################
 
 sensor:
