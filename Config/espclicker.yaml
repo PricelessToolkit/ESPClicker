@@ -1,11 +1,11 @@
 substitutions:
-  name: "espclicker"
-  friendly_name: "ESPClicker"
+  name: espclicker
+  friendly_name: ESPClicker
 
 
 esphome:
-  name: "${name}"
-  friendly_name: "${friendly_name}"
+  name: ${name}
+  friendly_name: ${friendly_name}
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
   name_add_mac_suffix: true
@@ -24,7 +24,7 @@ wifi:
   password: !secret wifi_password
   fast_connect: true
   ap:
-    ssid: "${name} Fallback Hotspot"
+    ssid: "${friendly_name} Fallback Hotspot"
     password: "password"
     ap_timeout: 10s
 
@@ -52,20 +52,20 @@ sensor:
 
 - platform: adc
   pin: A0
-  name: "ADC"
+  name: "${friendly_name} ADC"
   update_interval: 5s
 
 - platform: uptime
-  name: "${name} Uptime"
+  name: "${friendly_name} Uptime"
   id: uptime_seconds
 
 - platform: wifi_signal
-  name: "${name} WiFi Signal"
+  name: "${friendly_name} WiFi Signal"
 
 binary_sensor:
 
   - platform: status
-    name: "${name} Status"
+    name: "${friendly_name} Status"
 
   - platform: gpio
     pin:
@@ -75,45 +75,45 @@ binary_sensor:
         input: true
     filters:
       - delayed_off: 400ms
-    name: "${name} AC_Sens"
+    name: "${friendly_name} AC_Sens"
 
 switch:
   - platform: restart
-    name: "${name} restart"
+    name: "${friendly_name} restart"
 
 
 ##########################################
   - platform: gpio
     pin: 4
     id: Relay1
-    name: "${name} Relay1"
+    name: "${friendly_name} Relay1"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
 ##########################################
   - platform: gpio
     pin: 5
     id: Relay2
-    name: "${name} Relay2"
+    name: "${friendly_name} Relay2"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
 ########################################
   - platform: gpio
     pin: 12
     id: Relay3
-    name: "${name} Relay3"
+    name: "${friendly_name} Relay3"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
 ########################################
   - platform: gpio
     id: LS1
-    name: "${name} LS1"
+    name: "${friendly_name} LS1"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
     pin: 15
 ########################################
   - platform: gpio
     id: LS2
-    name: "${name} LS2"
+    name: "${friendly_name} LS2"
     icon: "mdi:switch"
     restore_mode: ALWAYS_OFF
     pin: 14
