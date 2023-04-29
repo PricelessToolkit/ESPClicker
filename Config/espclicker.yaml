@@ -1,3 +1,32 @@
+#################################################################################################################################################
+#!!!!!!!!!!!!!!!!! AFTER CLICKING "ADOPT" CLICK ON "TREE DOTS" AND CLICK "RENAME HOSTNAME" AND PUT "espclicker-XXXXXX" SUFFIX  !!!!!!!!!!!!!!!!!#
+#!!!!!!!!!!!! WITHOUT THIS IT WILL BE IMPOSSIBLE TO DO OTA UPDATE,BECAUSE ESPhome WILL TRY TO RESOLVE  ADDRESS ON "espclicker.local" !!!!!!!!!!!#
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! OR YOU CAN UPLOAD THE FIRMWARE VIA USB OR VIA CAPTIV PORTAL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+#
+### UPLOAD VIA WIFI Captive Portal ##
+# The captive portal component in ESPHome is a fallback mechanism for when connecting to the configured WiFi fails. 
+# After 1 minute of unsuccessful WiFi connection attempts, the ESP will start a WiFi hotspot with the credentials
+#
+# SSID "ESPClicker-XXXXXX Fallback Hotspot"
+# Password "password"
+#
+# When you connect to the fallback network, the web interface should open automatically (see also login to network notifications). 
+# If that does not work, you can also navigate to http://192.168.4.1/ manually in your browser. In this web interface, 
+# you can manually override the WiFi settings of the device. Additionally, you can upload a new firmware file to your node without having to use a USB cable for uploads.
+#
+### UPLOAD VIA USB ###
+# 1. Open your ESPHome dashboard.
+# 2. Create new ESPhome device and paste your config then save it
+# 3. Find your device card click on menu (TREE DOTS)
+# 4. Click on Install
+# 5. Click on Manual Download
+# 6. Click on Modern Format
+# 7. After Completion, the firmware will be automatically downloaded
+# 8. Open https://web.esphome.io/,  Push and hold "ESPClicker" button then plug in usb cable and click CONNECT.
+# 9. Click on button "Choose File" select downloaded firmware and Click INSTALL
+#################################################################################################################################################
+
+
 substitutions:
   name: "espclicker"
   friendly_name: "ESPClicker"
@@ -22,7 +51,7 @@ wifi:
     ssid: "${friendly_name} Fallback Hotspot"
     password: "password"
     ap_timeout: 10s
-    
+
 captive_portal:
 
 logger:
@@ -31,10 +60,11 @@ api:
 
 ota:
 
-# This should point to the public location of this yaml file.
+############################### DELET THIS PART AFTER ################################
 dashboard_import:
   package_import_url: github://PricelessToolkit/ESPClicker/Config/espclicker.yaml@main
   import_full_config: true # or true
+######################################################################################
 
 sensor:
 
