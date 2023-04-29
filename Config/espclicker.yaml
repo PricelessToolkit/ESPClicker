@@ -4,15 +4,15 @@ substitutions:
 
 
 esphome:
-  name: "${name}"
-  friendly_name: "${friendly_name}"
+  name: ${name}
+  friendly_name: ${friendly_name}
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
   name_add_mac_suffix: true
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: pricelesstoolkit.espclicker-template
+    name: pricelesstoolkit.espclicker
     version: "1.0"
 
 esp8266:
@@ -32,7 +32,6 @@ wifi:
 # In combination with the `ap` this allows the user
 # to provision wifi credentials to the device.
 captive_portal:
-
 
 
 # To be able to get logs from the device via serial and api.
