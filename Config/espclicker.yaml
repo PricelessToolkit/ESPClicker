@@ -1,10 +1,10 @@
-substitutions:
-  name: "espclicker"
-  friendly_name: "ESPClicker"
+#substitutions:
+  #name: "espclicker"
+  #friendly_name: "ESPClicker"
 
 
 esphome:
-  name: "${name}"
+  name: "espclicker"
   friendly_name: "${friendly_name}"
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
@@ -45,9 +45,9 @@ api:
 ota:
 
 # This should point to the public location of this yaml file.
-dashboard_import:
-  package_import_url: github://PricelessToolkit/ESPClicker/Config/espclicker.yaml@main
-  import_full_config: true # or true
+#dashboard_import:
+  #package_import_url: github://PricelessToolkit/ESPClicker/Config/espclicker.yaml@main
+  #import_full_config: true # or true
 
 sensor:
 
