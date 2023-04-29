@@ -20,6 +20,9 @@ esp8266:
   early_pin_init: false
 
 wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  fast_connect: true
   ap:
     ssid: "${friendly_name} Fallback Hotspot"
     password: "password"
