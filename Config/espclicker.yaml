@@ -1,6 +1,6 @@
 substitutions:
-  #name: "espclicker"
-  #friendly_name: "ESPClicker"
+  name: espclicker
+  friendly_name: ESPClicker
 
 
 esphome:
