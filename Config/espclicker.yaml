@@ -4,7 +4,7 @@
 
 
 esphome:
-  name: "espclicker"
+  name: "${name}"
   friendly_name: "${friendly_name}"
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
@@ -24,7 +24,7 @@ wifi:
   password: !secret wifi_password
   fast_connect: true
   ap:
-    ssid: "${friendly_name} Fallback Hotspot"
+    ssid: "${name} Fallback Hotspot"
     password: "password"
     ap_timeout: 10s
 
