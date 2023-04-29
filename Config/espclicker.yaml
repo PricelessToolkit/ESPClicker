@@ -22,20 +22,13 @@ wifi:
     ssid: "${friendly_name} Fallback Hotspot"
     password: "password"
     ap_timeout: 10s
-
-
-# In combination with the `ap` this allows the user
-# to provision wifi credentials to the device.
+    
 captive_portal:
 
-
-# To be able to get logs from the device via serial and api.
 logger:
 
-# API is a requirement of the dashboard import.
 api:
 
-# OTA is required for Over-the-Air updating
 ota:
 
 # This should point to the public location of this yaml file.
