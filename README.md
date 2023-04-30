@@ -16,7 +16,7 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 * 2x Low-Side Switch "ULM2003" ( Controll PINS: LS1-GPIO14, LS2-GPIO15 ) MAX LOAD 300mA
 * 1x ADC Pin "1V Max"
 * 1x ACS Pin "AC Power Detector" (Input Pin GPIO13)
-* Requires 5-12V 500mA power supply
+* Requires 4-6V 500mA power supply
 
 # Schematic
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Schematic.jpg" width="1000" height="700" />
