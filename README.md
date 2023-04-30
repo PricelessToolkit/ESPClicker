@@ -27,7 +27,7 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 
 ## Additional parts list
 * Cable for ESPClicker 12P https://s.click.aliexpress.com/e/_DEXNTZF
-* Power Supply 5-12V 500-700mA https://s.click.aliexpress.com/e/_DFcN9hb
+* Power Supply 4-6V 500mA https://s.click.aliexpress.com/e/_DFcN9hb
 
 Programmer and Test Clip Fixture
 * ESP8266 Programmer https://s.click.aliexpress.com/e/_DF4HDaH
