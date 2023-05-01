@@ -18,12 +18,6 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 * 1x ACS Pin "AC Power Detector" (Input Pin GPIO13)
 * Requires 5V 500mA power supply
 
-# Schematic
-<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Schematic.jpg" width="1000" height="700" />
-
-# Assembly
-### Easy assembly with interactive iBom file
-<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Interactiv_HTML_Boom.jpg" width="1000" height="400" />
 
 # Programming
 
@@ -58,6 +52,14 @@ you can manually override the WiFi settings of the device. Additionally, you can
 7. After Completion, the firmware will be automatically downloaded
 8. Open https://web.esphome.io/,  Push and hold "ESPClicker" BOOT button then plug in usb cable and click CONNECT.
 9. Click on button "Choose File" select your firmware and Click INSTALL
+
+# Schematic
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Schematic.jpg" width="1000" height="700" />
+
+# Assembly
+### Easy assembly with interactive iBom file
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Interactiv_HTML_Boom.jpg" width="1000" height="400" />
+
 
 
 ## Additional parts list
