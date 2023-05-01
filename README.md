@@ -30,8 +30,7 @@ AND PUT "espclicker-XXXXXX" SUFFIX
 
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/adopt.jpg" width="684" height="177" />
 
-WITHOUT THIS IT WILL BE IMPOSSIBLE TO DO OTA UPDATE, BECAUSE ESPhome WILL TRY TO RESOLVE  ADDRESS ON "espclicker.local"
-OR YOU CAN UPLOAD THE FIRMWARE VIA USB OR VIA CAPTIV PORTAL
+WITHOUT THIS IT WILL BE IMPOSSIBLE TO DO OTA UPDATE, BECAUSE ESPhome WILL TRY TO RESOLVE  ADDRESS ON "espclicker.local".
 
 
 ### UPLOAD VIA WIFI Captive Portal
