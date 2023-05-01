@@ -22,7 +22,13 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 # Programming
 
 ### ESPHome Dashboard Import "NEW"
-CONNECT TO THE ESPClicker FALLBACK NETWORK  "ESPClicker-XXXXXX Fallback Hotspot"  VIA WIFI AND CHANGE WIFI USERNAME AND PASSWORD, GO TO THE ESPhome AND CLICK  "ADOPT" THEN CLICK ON "TREE DOTS" AND CLICK "RENAME HOSTNAME" AND PUT "espclicker-XXXXXX" SUFFIX
+CONNECT TO THE ESPClicker FALLBACK NETWORK  "ESPClicker-XXXXXX Fallback Hotspot"  VIA WIFI AND CHANGE WIFI USERNAME AND PASSWORD, GO TO THE ESPhome AND CLICK  "ADOPT" THEN CLICK ON "TREE DOTS" AND CLICK "RENAME HOSTNAME" 
+
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/dot.jpg" width="247" height="399" />
+
+AND PUT "espclicker-XXXXXX" SUFFIX
+
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/adopt.jpg" width="684" height="177" />
 
 WITHOUT THIS IT WILL BE IMPOSSIBLE TO DO OTA UPDATE, BECAUSE ESPhome WILL TRY TO RESOLVE  ADDRESS ON "espclicker.local"
 OR YOU CAN UPLOAD THE FIRMWARE VIA USB OR VIA CAPTIV PORTAL
