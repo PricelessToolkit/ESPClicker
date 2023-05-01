@@ -13,10 +13,10 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 * 4 Layer PCB
 * WiFi Module ESP8266 ESP-12F
 * 3x Built-in signal relays ( Controll PINS: R1-GPIO4, R2-GPIO5, R3-GPIO12 ) "R1 can be configured as normally open or normally closed" MAX LOAD 500mA 24V
-* 2x Low-Side Switch "ULM2003" ( Controll PINS: LS1-GPIO14, LS2-GPIO15 ) MAX LOAD 300mA
+* 2x Low-Side Switch "ULM2003" ( Controll PINS: LS1-GPIO14, LS2-GPIO15 ) MAX LOAD 150mA "1-2 Sec"
 * 1x ADC Pin "1V Max"
 * 1x ACS Pin "AC Power Detector" (Input Pin GPIO13)
-* Requires 5-12V 500mA power supply
+* Requires 5V 500mA power supply
 
 # Schematic
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Schematic.jpg" width="1000" height="700" />
@@ -27,7 +27,7 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 
 ## Additional parts list
 * Cable for ESPClicker 12P https://s.click.aliexpress.com/e/_DEXNTZF
-* Power Supply 5-12V 500-700mA https://s.click.aliexpress.com/e/_DFcN9hb
+* Power Supply 5V 500mA https://s.click.aliexpress.com/e/_DFcN9hb
 
 Programmer and Test Clip Fixture
 * ESP8266 Programmer https://s.click.aliexpress.com/e/_DF4HDaH
