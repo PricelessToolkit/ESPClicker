@@ -18,6 +18,9 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 * 1x ACS Pin "AC Power Detector" (Input Pin GPIO13)
 * Requires 5V 500mA power supply
 
+## ! WARNING ! 
+THE COLOR CODE OF THE CABLE DIDN'T MATCH, REAL PIN LABELS ARE ON THE PCB
+
 
 # Programming
 
