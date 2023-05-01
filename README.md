@@ -21,7 +21,7 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 
 # Programming
 
-### ESPHome Dashboard Import
+### ESPHome Dashboard Import "NEW"
 CONNECT TO THE ESPClicker FALLBACK NETWORK  "ESPClicker-XXXXXX Fallback Hotspot"  VIA WIFI AND CHANGE WIFI USERNAME AND PASSWORD, GO TO THE ESPhome AND CLICK  "ADOPT" THEN CLICK ON "TREE DOTS" AND CLICK "RENAME HOSTNAME" AND PUT "espclicker-XXXXXX" SUFFIX
 
 WITHOUT THIS IT WILL BE IMPOSSIBLE TO DO OTA UPDATE, BECAUSE ESPhome WILL TRY TO RESOLVE  ADDRESS ON "espclicker.local"
