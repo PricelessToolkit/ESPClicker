@@ -25,6 +25,40 @@ Online Shop: https://www.pricelesstoolkit.com/en/projects/32-espclicker.html
 ### Easy assembly with interactive iBom file
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/Interactiv_HTML_Boom.jpg" width="1000" height="400" />
 
+# Programming
+
+### ESPHome Dashboard Import
+CONNECT TO THE ESPClicker FALLBACK NETWORK  "ESPClicker-XXXXXX Fallback Hotspot"  VIA WIFI AND CHANGE WIFI USERNAME AND PASSWORD, GO TO THE ESPhome AND CLICK  "ADOPT" THEN CLICK ON "TREE DOTS" AND CLICK "RENAME HOSTNAME" AND PUT "espclicker-XXXXXX" SUFFIX
+WITHOUT THIS IT WILL BE IMPOSSIBLE TO DO OTA UPDATE,BECAUSE ESPhome WILL TRY TO RESOLVE  ADDRESS ON "espclicker.local"
+OR YOU CAN UPLOAD THE FIRMWARE VIA USB OR VIA CAPTIV PORTAL
+
+
+### UPLOAD VIA WIFI Captive Portal
+The captive portal component in ESPHome is a fallback mechanism for when connecting to the configured WiFi fails. 
+After 1 minute of unsuccessful WiFi connection attempts, the ESP will start a WiFi hotspot with the credentials
+
+```
+SSID "ESPClicker-XXXXXX Fallback Hotspot"
+Password "password"
+```
+When you connect to the fallback network, the web interface should open automatically (see also login to network notifications). 
+If that does not work, you can also navigate to http://192.168.4.1/ manually in your browser. In this web interface, 
+you can manually override the WiFi settings of the device. Additionally, you can upload a new firmware file to your node without having to use a USB cable for uploads.
+
+
+### UPLOAD VIA USB ###
+
+1. Open your ESPHome dashboard.
+2. Create new ESPhome device and paste your config then save it
+3. Find your device card click on menu (TREE DOTS)
+4. Click on Install
+5. Click on Manual Download
+6. Click on Modern Format
+7. After Completion, the firmware will be automatically downloaded
+8. Open https://web.esphome.io/,  Push and hold "ESPClicker" BOOT button then plug in usb cable and click CONNECT.
+9. Click on button "Choose File" select your firmware and Click INSTALL
+
+
 ## Additional parts list
 * Cable for ESPClicker 12P https://s.click.aliexpress.com/e/_DEXNTZF
 * Power Supply 5V 500mA https://s.click.aliexpress.com/e/_DFcN9hb
