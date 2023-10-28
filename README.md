@@ -1,5 +1,5 @@
 # ESPClicker 
-<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/3D.jpg" width="1000" height="180" />
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPClicker/main/img/3D_Render.jpg" width="1000" height="180" />
 ESPClicker is a very simple, ESP8266 based IoT project that will allow you to integrate your normal devices such as a coffee machine, fan, etc, into your Smart home "make them all IoT enabled". Works with Home Assistant And ESPhome.
 
 YouTube Video: https://youtu.be/Gc4yCd9yvuE
